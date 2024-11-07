@@ -9,7 +9,7 @@ import { data } from '../datos'
 import { type PriceEntry } from '../datos'
 
 function App () {
-  const dataYPF: PriceEntry = data.YPF.at(-1)
+  const dataYPF: PriceEntry = data.YPF.at(-1) ?? data.YPF[0]
   return (
     <Box sx={{ display: 'flex', height: '100%', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
     <h1>hola</h1>
