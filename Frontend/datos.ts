@@ -1,4 +1,4 @@
-export const data: AssetData = {
+export const data: AssetDatas = {
   WTI: [
     { Bid: 69.90, Ask: 70.10, Last: 70.00, Timestamp: '2024-11-05 15:04:05.000' },
     { Bid: 69.95, Ask: 70.15, Last: 70.05, Timestamp: '2024-11-05 15:04:05.200' },
@@ -34,6 +34,12 @@ export interface PriceEntry {
 
 // Define the structure for each asset type containing multiple price entries
 export interface AssetData {
+  WTI: PriceEntry
+  SOY: PriceEntry
+  YPF: PriceEntry
+  SP500: PriceEntry
+}
+export interface AssetDatas {
   WTI: PriceEntry[]
   SOY: PriceEntry[]
   YPF: PriceEntry[]
