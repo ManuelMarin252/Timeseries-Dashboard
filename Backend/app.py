@@ -54,7 +54,7 @@ def generate_data():
         socketio.emit('price_update', prices)
         # poner un mensaje en la consola del servidor
         # Pausa de 10 segundos antes de enviar el próximo conjunto de datos
-        socketio.sleep(20)
+        socketio.sleep(0.2)
 
 # Iniciar el hilo de simulación de datos al arrancar el servidor
 @socketio.on('connect')
