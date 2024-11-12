@@ -43,8 +43,8 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Topbar />
-        <Box sx={{ mt:'20px', backgroundColor: colors.primary[500], flexDirection: 'column', display: 'flex', height: '150vh', width: '100%', justifyContent: 'center', overflow: 'auto', alignItems: 'center' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2, alignItems: 'center', pt:'400px' }}>
+        <Box sx={{ mt: '20px', backgroundColor: colors.primary[500], flexDirection: 'column', display: 'flex', height: '150vh', width: '100%', justifyContent: 'center', overflow: 'auto', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2, alignItems: 'center', pt: '400px' }}>
           {/* Iterar sobre los precios de cada activo */}
           {Object.keys(prices).map((asset, index) => (
             <Book priceEntry={prices[asset]} title={asset} key={index} />
